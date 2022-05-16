@@ -29,7 +29,6 @@ class Workout {
 
 class Running extends Workout {
   type = 'running';
-
   constructor(coords, distance, duration, cadence) {
     super(coords, distance, duration);
     this.cadence = cadence;
@@ -135,8 +134,11 @@ class App {
 
   _hideForm() {
     // Empty inputs
-    inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value =
-      '';
+    inputDistance.value =
+      inputDuration.value =
+      inputCadence.value =
+      inputElevation.value =
+        '';
 
     form.style.display = 'none';
     form.classList.add('hidden');
